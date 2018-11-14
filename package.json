@@ -1,0 +1,14 @@
+{
+  "name": "simple-rest-apis-nodejs-without-frameworks",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -u tdd"
+  },
+  "keywords": [
+    "npm-library"
+  ],
+  "author": "Alberto Eyo",
+  "license": "ISC"
+}
