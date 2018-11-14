@@ -8,6 +8,12 @@ module.exports = http.createServer((req, res) => {
   // GET Endpoint
   if (reqUrl.pathname === '/sample' && req.method === 'GET') {
     console.log(`Request Type: ${req.method} Endpoint: ${reqUrl.pathname}`);
-    service.sampleRequest(req, res);
+    return service.sampleRequest(req, res);
   }
+  if (reqUrl.pathname === '/test' && req.method === 'POST') {
+    console.log(`Request Type: ${req.method} Endpoint: ${reqUrl.pathname}`);
+    return service.testRequest(req, res);
+  }
+  console.log(`Request Type: ${req.method} Invalid Endpoint: ${reqUrl.pathname}`);
+  return service.invalidRequest(req, res);
 });
