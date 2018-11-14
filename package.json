@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -u tdd"
+    "test": "mocha -u tdd",
+    "start": "node app.js"
   },
   "keywords": [
     "npm-library"
